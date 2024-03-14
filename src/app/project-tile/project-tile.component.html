@@ -1,0 +1,26 @@
+<div class="project-tile">
+  <div class="image-container">
+    <img *ngIf="!isPortait" [src]="thumbnailOnePath" alt="Image One" class="project-image-landscape" />
+    <img *ngIf="isPortait" [src]="thumbnailOnePath" alt="Image One" class="project-image" />
+    <img *ngIf="isPortait" [src]="thumbnailTwoPath" alt="Image Two" class="project-image" />
+    <img *ngIf="isPortait" [src]="thumbnailThreePath" alt="Image Three" class="project-image" />
+  </div>
+  <div class = "tags-container">
+    <div class="tags">
+      <span *ngFor="let tag of tags" [ngClass]="'tag-' + tag" class="tag">
+        {{Tag(tag)}}
+      </span>
+    </div>
+    <div class="placeholder-icons">
+      <span *ngIf="hasStore" class="placeholder-icon"><a [href]="storeUrl" target="_blank"><img class="shadow-icon" src="assets/gp_square.png" alt="Github Repository"></a></span>
+      <span class="placeholder-icon"><a [href]="repoLink" target="_blank"><img class="shadow-icon"  src="assets/github_icon_square.png" alt="Github Repository"></a></span>
+    </div>
+  </div>
+  <div class="title">{{ title }}</div>
+  <div class="description">{{ thumbnailString }}</div>
+  <div  (click)="openProjectView()" class="more-info" href="">More Information</div>
+  <!-- Display the YouTube player if there is a video -->
+  <div *ngIf="hasVideo" class="plyr__video-embed">
+    <iframe [src]="safeURL" allowfullscreen allowtransparency allow="autoplay"></iframe>
+  </div>  
+</div>

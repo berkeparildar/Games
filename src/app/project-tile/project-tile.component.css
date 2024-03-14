@@ -1,0 +1,193 @@
+.project-tile {
+  background-color: #1e1e2e;
+  border: 1px solid #cba6f7;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+  justify-content: center;
+}
+
+.title {
+  color: #fab387;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: start;
+  padding-left: 5px;
+}
+
+.image-container {
+  padding-right: 5px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center; /* Distribute images evenly */
+  padding-bottom: 5px;
+}
+
+.project-image {
+  border: #a6e3a1 3px solid;
+  max-width: calc(100% / 3);
+  max-height: 250px;
+  margin: 0.5vw;
+  border-radius: 8px;
+}
+.project-image-landscape {
+  border: #a6e3a1 3px solid;
+  max-width: calc(100%);
+  max-height: 250px;
+  border-radius: 8px;
+  margin: 0.5vw;
+
+}
+
+.plyr__video-embed {
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin: 10px 0;
+}
+
+.plyr__video-embed iframe {
+  position: absolute;
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  color: #fff;
+  font-size: clamp(11px, 1vw, 15px);
+  padding: 5px;
+  text-align: justify;
+}
+
+.genre {
+  top: 10px;
+  left: 10px;
+  color: #f38ba8;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tags {
+  padding: 5px;
+  /* margin-bottom: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  /* margin-top: 10px; */
+}
+
+.tag {
+  text-align: center;
+  min-width: 40px;
+  color: #fff;
+  border-radius: 16px;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+.tag-C_ {
+  background-color: rgba(203, 166, 247, 0.3);
+  border: 2px solid #cba6f7;
+}
+.tag-Unity {
+  background-color: rgba(127, 132, 156, 0.3);
+  border: 2px solid #7f849c;
+}
+.tag-Photon {
+  background-color: rgba(245, 224, 220, 0.3);
+  border: 2px solid #f5e0dc;
+}
+.tag-NodeJS {
+  background-color: rgba(166, 227, 161 , 0.3);
+  border: 2px solid #a6e3a1;
+}
+.tag-Solidity {
+  background-color: rgba(17, 17, 27 , 0.3);
+  border: 2px solid #11111b;
+}
+.tag-Flutter {
+  background-color: rgba(116, 199, 236 , 0.3);
+  border: 2px solid #74c7ec ;
+}
+.tag-Java {
+  background-color: rgba(250, 179, 135 , 0.3);
+  border: 2px solid #fab387 ;
+}
+.tag-C {
+  background-color: rgba(137, 180, 250, 0.3);
+  border: 2px solid #89b4fa ;
+}
+.tag-Mobile {
+  background-color: rgba(243, 139, 168, 0.3);
+  border: 2px solid #f38ba8;
+}
+.tag-SDL {
+  background-color: rgba(249, 226, 175, 0.3);
+  border: 2px solid #f9e2af	;
+}
+.tag-Multiplayer {
+  background-color: rgba(148, 226, 213, 0.3);
+  border: 2px solid #94e2d5;
+}
+
+.tags-container {
+  display: flex;
+  align-items: center;
+}
+
+.tags {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.placeholder-icons {
+  margin-left: auto; /* Push the icons to the right */
+  display: flex;
+  align-items: center;
+}
+
+.placeholder-icon {
+  color: #fff;
+  padding: 5px;
+}
+
+.more-info {
+  margin-left: auto; /* Push the icons to the right */
+ color: #1e1e2e;
+ width: 130px;
+ text-align: center;
+ text-decoration: none;
+ font-weight: bold;
+ padding-left: 4px;
+ padding-right: 4px;
+ font-size: clamp(11px, 1vw, 14px);
+ background-color: #fab387;
+ border-radius: 12px;
+ justify-self: end;
+}
+
+.more-info:hover {
+  cursor: pointer;
+}
+
+
+.shadow-icon:hover {
+  filter: drop-shadow(0 0 0.5rem #a6e3a1);
+  transition: filter 300ms linear;
+
+}
+
+.more-info:hover {
+  cursor: pointer;
+  background-color: #a6e3a1;
+  transition: background-color 300ms linear;
+}
